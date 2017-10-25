@@ -2,23 +2,17 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, StatusBar } from 'react-native';
 import { Constants } from 'expo';
 
-import Start from '../start/Start';
+export default class Drawerpage2 extends React.Component{
 
-export default class Dashboard extends React.Component{
-
-    componentDidMount(){
-        //this.props.navigation.navigate('DrawerOpen');
-    }
     render(){
         return (
             <View>
                 <View style={styles.statusBar} />
                 <Text>
-                    Its Dashboard
+                    Its About Drawerpage2 df
                 </Text>
-                <Start />
                 <Button
-        onPress={() => {console.log(this.props.navigation);this.props.navigation.navigate('DrawerOpen');}}
+        onPress={() => {this.props.navigation.navigate('DrawerOpen');}}
         title="opend"
       />
       <Button

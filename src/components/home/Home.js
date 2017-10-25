@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, StatusBar } from 'react-native';
 import { Constants } from 'expo';
 
+import Start from '../start/Start';
+
 export default class Home extends React.Component{
 
     componentDidMount(){
@@ -11,7 +13,7 @@ export default class Home extends React.Component{
     render(){
         return (
             <View>
-            <View style={styles.statusBar} />
+            
                 <Text>
                     Its home dear ok----
                 </Text>
@@ -22,6 +24,11 @@ export default class Home extends React.Component{
       <Button
         onPress={() => this.props.navigation.navigate('Dashboard', {})}
         title="Go to Dashboard"
+      />
+
+      <Button
+        onPress={() => this.props.navigation.navigate('Start', {})}
+        title="Go to Direct start"
       />
             </View>
         );
@@ -36,3 +43,4 @@ const styles = StyleSheet.create({
 
   // rest of the styles
 });
+//<View style={styles.statusBar} />

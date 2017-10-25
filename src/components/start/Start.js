@@ -5,6 +5,9 @@ import { Constants } from 'expo';
 import Home from '../home/Home';
 import About from '../about/About';
 
+import Drawerpage1 from '../drawer/Drawerpage1';
+import Drawerpage2 from '../drawer/Drawerpage2';
+
 import { DrawerNavigator } from 'react-navigation';
 
 class MyHomeScreen extends React.Component {
@@ -46,10 +49,10 @@ class MyHomeScreen extends React.Component {
   
   const Start = DrawerNavigator({
     Home: {
-      screen: Home,
+      screen: Drawerpage1,
     },
     Notifications: {
-      screen: About,
+      screen: Drawerpage2,
     },
   },{
     drawerWidth: 200,
